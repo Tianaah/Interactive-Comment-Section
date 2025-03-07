@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     replyTo.textContent = comment.replyingTo ? `@${comment.replyingTo} ` : "";
 
     if (comment.user.username === data.currentUser.username) {
-      editButton.style.display = "inline-block"; // ✅ Ensure Edit button is visible
+      editButton.style.display = "inline-block";
       deleteButton.style.display = "inline-block";
     } else {
       editButton.style.display = "none";
